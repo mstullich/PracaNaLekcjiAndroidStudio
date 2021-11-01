@@ -18,40 +18,35 @@
         android:id="@+id/nasZdjecie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/wZdjecie"
+        android:layout_above="@+id/checkBox"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="500dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="114dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="35dp"
         android:backgroundTint="#86F10A"
         android:text="Kolejne Zdjecie" />
-
-    <Button
-        android:id="@+id/wZdjecie"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="610dp"
-        android:text="Pokaz" />
-
-    <Button
-        android:id="@+id/nZdjecie"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/nasZdjecie"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="64dp"
-        android:text="Schowaj" />
 
     <Button
         android:id="@+id/popZdjecie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/wZdjecie"
-        android:layout_alignBottom="@+id/wZdjecie"
-        android:layout_marginStart="-158dp"
-        android:layout_marginBottom="114dp"
+        android:layout_above="@+id/checkBox"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="35dp"
+        android:layout_toStartOf="@+id/nasZdjecie"
         android:backgroundTint="#D11515"
         android:text="Poprzednie Zdjecie" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="100dp"
+        android:text="Schowaj zdjecie" />
 
 </RelativeLayout>

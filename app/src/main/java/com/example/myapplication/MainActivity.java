@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.Switch;
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
      ImageView iv;
      Button bt;
+     CheckBox ch;
      boolean flag;
      int images[]={R.drawable.gwagon,
              R.drawable.m5,
@@ -30,28 +32,21 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        //ZNIKANIE I POKAZYWANIE ZDJĘCIA
-        iv = (ImageView)findViewById(R.id.imageView);
-        btn_hide = (Button)findViewById(R.id.nZdjecie);
-        btn_show = (Button)findViewById(R.id.wZdjecie);
 
-        btn_show.setOnClickListener(new View.OnClickListener() {
+        ch = (CheckBox)findViewById(R.id.checkBox);
+
+        ch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                boolean checked = ((CheckBox) v).isChecked();
+                if (checked) {
+                    iv.setVisibility(View.INVISIBLE);
+                }else{
+                    iv.setVisibility(View.VISIBLE);
 
-                iv.setVisibility(View.VISIBLE);
+                }
             }
         });
-
-        btn_hide.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                iv.setVisibility(View.INVISIBLE);
-            }
-        });
-
-
-
 
 
 
