@@ -23,4 +23,20 @@
         android:layout_marginTop="500dp"
         android:text="Zmiana zdjecia" />
 
+    <Button
+        android:id="@+id/wZdjecie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="650dp"
+        android:text="Pokaz" />
+
+    <Button
+        android:id="@+id/nZdjecie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"
+        android:text="Schowaj" />
+
 </RelativeLayout>

@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.Switch;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
+
         iv = findViewById(R.id.imageView);
         bt = findViewById(R.id.button);
         flag = true;
@@ -36,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        
+
 
 
 
