@@ -56,9 +56,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        //ZMIANA ZDJĘĆ
+        //NASTEPNE ZDJECIE
         iv = findViewById(R.id.imageView);
-        bt = findViewById(R.id.button);
+        bt = findViewById(R.id.nasZdjecie);
         flag = true;
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +70,25 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+        //POPRZEDNIE ZDJECIE
+        iv = findViewById(R.id.imageView);
+        bt = findViewById(R.id.popZdjecie);
+        flag = true;
+        bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                iv.setImageResource(images[i]);
+                i--;
+                if(i==-1){
+                    i=0;
+                }
+            }
+        });
+
+
+
 
 
 

@@ -15,13 +15,16 @@
         app:srcCompat="@drawable/gwagon" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/nasZdjecie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#86F10A"
-        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/wZdjecie"
+        android:layout_alignParentEnd="true"
         android:layout_marginTop="500dp"
-        android:text="Zmiana zdjecia" />
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="114dp"
+        android:backgroundTint="#86F10A"
+        android:text="Kolejne Zdjecie" />
 
     <Button
         android:id="@+id/wZdjecie"
@@ -35,8 +38,20 @@
         android:id="@+id/nZdjecie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nasZdjecie"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="570dp"
+        android:layout_marginTop="64dp"
         android:text="Schowaj" />
+
+    <Button
+        android:id="@+id/popZdjecie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/wZdjecie"
+        android:layout_alignBottom="@+id/wZdjecie"
+        android:layout_marginStart="-158dp"
+        android:layout_marginBottom="114dp"
+        android:backgroundTint="#D11515"
+        android:text="Poprzednie Zdjecie" />
 
 </RelativeLayout>
