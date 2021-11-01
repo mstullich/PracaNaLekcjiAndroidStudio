@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
      int i=0;
 
 
+     Button btn_show,btn_hide;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +30,33 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        //ZNIKANIE I POKAZYWANIE ZDJĘCIA
+        iv = (ImageView)findViewById(R.id.imageView);
+        btn_hide = (Button)findViewById(R.id.nZdjecie);
+        btn_show = (Button)findViewById(R.id.wZdjecie);
+
+        btn_show.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                iv.setVisibility(View.VISIBLE);
+            }
+        });
+
+        btn_hide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                iv.setVisibility(View.INVISIBLE);
+            }
+        });
+
+
+
+
+
+
+
+        //ZMIANA ZDJĘĆ
         iv = findViewById(R.id.imageView);
         bt = findViewById(R.id.button);
         flag = true;
